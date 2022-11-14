@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsertVendedorService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="InsertVendedorServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsertVendedorServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="InsertVendedorServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:InsertVendedorServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsertVendedorServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:InsertVendedorServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="InsertVendedorServicePortType">
+		<wsdl:operation name="InsertVendedorServiceOperation">
+			<wsdl:input message="tns:InsertVendedorServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:InsertVendedorServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="InsertVendedorServiceBinding" type="tns:InsertVendedorServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InsertVendedorServiceOperation">
+			<soap:operation soapAction="http://www.talend.org/service/InsertVendedorServiceOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="InsertVendedorService">
+		<wsdl:port name="InsertVendedorServicePort" binding="tns:InsertVendedorServiceBinding">
+			<soap:address location="http://localhost:8090/services/InsertVendedorService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

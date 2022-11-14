@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BuscarVendedor"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="BuscarVendedorOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="BuscarVendedorOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="municipio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="uf"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="celular"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="BuscarVendedorOperationRequest">
+		<wsdl:part name="parameters" element="tns:BuscarVendedorOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="BuscarVendedorOperationResponse">
+		<wsdl:part name="parameters" element="tns:BuscarVendedorOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="BuscarVendedorPortType">
+		<wsdl:operation name="BuscarVendedorOperation">
+			<wsdl:input message="tns:BuscarVendedorOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:BuscarVendedorOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="BuscarVendedorBinding" type="tns:BuscarVendedorPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="BuscarVendedorOperation">
+			<soap:operation soapAction="http://www.talend.org/service/BuscarVendedorOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="BuscarVendedor">
+		<wsdl:port name="BuscarVendedorPort" binding="tns:BuscarVendedorBinding">
+			<soap:address location="http://localhost:8090/services/BuscarVendedor" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

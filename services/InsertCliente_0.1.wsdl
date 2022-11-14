@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsertCliente"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="InsertClienteOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsertClienteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="InsertClienteOperationRequest">
+		<wsdl:part name="parameters" element="tns:InsertClienteOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsertClienteOperationResponse">
+		<wsdl:part name="parameters" element="tns:InsertClienteOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="InsertClientePortType">
+		<wsdl:operation name="InsertClienteOperation">
+			<wsdl:input message="tns:InsertClienteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:InsertClienteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="InsertClienteBinding" type="tns:InsertClientePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InsertClienteOperation">
+			<soap:operation soapAction="http://www.talend.org/service/InsertClienteOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="InsertCliente">
+		<wsdl:port name="InsertClientePort" binding="tns:InsertClienteBinding">
+			<soap:address location="http://localhost:8090/services/InsertCliente" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

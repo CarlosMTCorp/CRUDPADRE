@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BuscarClase"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="BuscarClaseOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="BuscarClaseOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="BuscarClaseOperationRequest">
+		<wsdl:part name="parameters" element="tns:BuscarClaseOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="BuscarClaseOperationResponse">
+		<wsdl:part name="parameters" element="tns:BuscarClaseOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="BuscarClasePortType">
+		<wsdl:operation name="BuscarClaseOperation">
+			<wsdl:input message="tns:BuscarClaseOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:BuscarClaseOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="BuscarClaseBinding" type="tns:BuscarClasePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="BuscarClaseOperation">
+			<soap:operation soapAction="http://www.talend.org/service/BuscarClaseOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="BuscarClase">
+		<wsdl:port name="BuscarClasePort" binding="tns:BuscarClaseBinding">
+			<soap:address location="http://localhost:8090/services/BuscarClase" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

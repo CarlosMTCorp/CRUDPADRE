@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BuscarCliente"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="BuscarClienteOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="BuscarClienteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="razon_social"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="nombre"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="BuscarClienteOperationRequest">
+		<wsdl:part name="parameters" element="tns:BuscarClienteOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="BuscarClienteOperationResponse">
+		<wsdl:part name="parameters" element="tns:BuscarClienteOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="BuscarClientePortType">
+		<wsdl:operation name="BuscarClienteOperation">
+			<wsdl:input message="tns:BuscarClienteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:BuscarClienteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="BuscarClienteBinding" type="tns:BuscarClientePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="BuscarClienteOperation">
+			<soap:operation soapAction="http://www.talend.org/service/BuscarClienteOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="BuscarCliente">
+		<wsdl:port name="BuscarClientePort" binding="tns:BuscarClienteBinding">
+			<soap:address location="http://localhost:8090/services/BuscarCliente" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

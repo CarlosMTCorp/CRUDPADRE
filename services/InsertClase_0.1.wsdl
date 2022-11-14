@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsertClase"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="InsertClaseOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:string"></xsd:element>
+						<xsd:element name="descripcion"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsertClaseOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="InsertClaseOperationRequest">
+		<wsdl:part name="parameters" element="tns:InsertClaseOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsertClaseOperationResponse">
+		<wsdl:part name="parameters" element="tns:InsertClaseOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="InsertClasePortType">
+		<wsdl:operation name="InsertClaseOperation">
+			<wsdl:input message="tns:InsertClaseOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:InsertClaseOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="InsertClaseBinding" type="tns:InsertClasePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InsertClaseOperation">
+			<soap:operation soapAction="http://www.talend.org/service/InsertClaseOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="InsertClase">
+		<wsdl:port name="InsertClasePort" binding="tns:InsertClaseBinding">
+			<soap:address location="http://localhost:8090/services/InsertClase" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
