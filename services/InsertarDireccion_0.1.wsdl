@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsertarDireccion"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="InsertarDireccionOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="barrio"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="ciudad"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pais"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsertarDireccionOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="InsertarDireccionOperationRequest">
+		<wsdl:part name="parameters" element="tns:InsertarDireccionOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsertarDireccionOperationResponse">
+		<wsdl:part name="parameters" element="tns:InsertarDireccionOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="InsertarDireccionPortType">
+		<wsdl:operation name="InsertarDireccionOperation">
+			<wsdl:input message="tns:InsertarDireccionOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:InsertarDireccionOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="InsertarDireccionBinding" type="tns:InsertarDireccionPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InsertarDireccionOperation">
+			<soap:operation soapAction="http://www.talend.org/service/InsertarDireccionOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="InsertarDireccion">
+		<wsdl:port name="InsertarDireccionPort" binding="tns:InsertarDireccionBinding">
+			<soap:address location="http://localhost:8090/services/InsertarDireccion" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
