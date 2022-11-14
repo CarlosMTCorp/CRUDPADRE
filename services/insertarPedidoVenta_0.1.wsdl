@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="insertarPedidoVenta"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="insertarPedidoVentaOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="fecha_emision"
+							type="xsd:date">
+						</xsd:element>
+						<xsd:element name="id_cliente"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_vendedor"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="id_direccion"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="fecha_entrega"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="insertarPedidoVentaOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="insertarPedidoVentaOperationRequest">
+		<wsdl:part name="parameters" element="tns:insertarPedidoVentaOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="insertarPedidoVentaOperationResponse">
+		<wsdl:part name="parameters" element="tns:insertarPedidoVentaOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="insertarPedidoVentaPortType">
+		<wsdl:operation name="insertarPedidoVentaOperation">
+			<wsdl:input message="tns:insertarPedidoVentaOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:insertarPedidoVentaOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="insertarPedidoVentaBinding" type="tns:insertarPedidoVentaPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="insertarPedidoVentaOperation">
+			<soap:operation soapAction="http://www.talend.org/service/insertarPedidoVentaOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="insertarPedidoVenta">
+		<wsdl:port name="insertarPedidoVentaPort" binding="tns:insertarPedidoVentaBinding">
+			<soap:address location="http://localhost:8090/services/insertarPedidoVenta" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
