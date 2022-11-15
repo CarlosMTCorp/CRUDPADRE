@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_TQlecGUdEe2mZvXks4efWg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_TQlecWUdEe2mZvXks4efWg" comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_TQmFgGUdEe2mZvXks4efWg" comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_TQmFgWUdEe2mZvXks4efWg" comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crmtest"/>
+    <contextParameter xmi:id="_TQmFgmUdEe2mZvXks4efWg" comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:wl19nU6qnK0rFHLdZrF1B3/u73cpwu4p1RmsursF2zM="/>
+    <contextParameter xmi:id="_TQmFg2UdEe2mZvXks4efWg" comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="trustServerCertificate=true;encrypt=false"/>
+    <contextParameter xmi:id="_TQmFhGUdEe2mZvXks4efWg" comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DESKTOP-2OM718V"/>
+    <contextParameter xmi:id="_TQmFhWUdEe2mZvXks4efWg" comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_kVRugGUdEe2mZvXks4efWg" confirmationNeeded="false" name="DevJose">
+    <contextParameter xmi:id="_kVRugWUdEe2mZvXks4efWg" comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_kVRugmUdEe2mZvXks4efWg" comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_kVRug2UdEe2mZvXks4efWg" comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crmtest"/>
+    <contextParameter xmi:id="_kVRuhGUdEe2mZvXks4efWg" comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:C/iJxhvkkgHe5fRJjXTrnzMxvEaau00Fi86HbKr7UraW1xfU888WIGw="/>
+    <contextParameter xmi:id="_kVRuhWUdEe2mZvXks4efWg" comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="trustServerCertificate=true;encrypt=false"/>
+    <contextParameter xmi:id="_kVRuhmUdEe2mZvXks4efWg" comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LAPTOP-CMEFJE6G"/>
+    <contextParameter xmi:id="_kVRuh2UdEe2mZvXks4efWg" comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talenduser"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_g2vqwGUgEe2mZvXks4efWg" confirmationNeeded="false" name="produccion">
+    <contextParameter xmi:id="_g2vqwWUgEe2mZvXks4efWg" comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo"/>
+    <contextParameter xmi:id="_g2vqwmUgEe2mZvXks4efWg" comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter xmi:id="_g2vqw2UgEe2mZvXks4efWg" comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="crmtest"/>
+    <contextParameter xmi:id="_g2vqxGUgEe2mZvXks4efWg" comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Y3n21avGt9L4as2Y2G2cQG2pmXUVoqpUgwLIMXUlgtWy82tDjHVEQXc="/>
+    <contextParameter xmi:id="_g2vqxWUgEe2mZvXks4efWg" comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="trustServerCertificate=true;encrypt=false"/>
+    <contextParameter xmi:id="_g2vqxmUgEe2mZvXks4efWg" comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LAPTOP-CMEFJE6G"/>
+    <contextParameter xmi:id="_g2vqx2UgEe2mZvXks4efWg" comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talenduser"/>
+  </talendfile:ContextType>
+</xmi:XMI>

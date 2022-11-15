@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="sa" internalId="_lbWo8GUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="trustServerCertificate=true;encrypt=false" internalId="_lbWo8WUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="1433" internalId="_lbWo8mUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="dbo" internalId="_lbWo82UhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_Password" value="enc:system.encryption.key.v1:l3HCkes5MC3D0eOmLaItTxhmgvBGzoGY0bNxwklyNhc=" internalId="_lbWo9GUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="DESKTOP-2OM718V" internalId="_lbWo9WUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="crmtest" internalId="_lbWo9mUhEe2mZvXks4efWg"/>
+  </context>
+  <context confirmationNeeded="false" name="DevJose">
+    <contextParameter comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="dbo" internalId="_lbWo92UhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="1433" internalId="_lbWo-GUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="crmtest" internalId="_lbWo-WUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_Password" value="enc:system.encryption.key.v1:hJqlyKjxnoIM/2czbKI3xEsJs2NeibKRztLN1p9P5Ji4T2WaAmyNQS4=" internalId="_lbWo-mUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="trustServerCertificate=true;encrypt=false" internalId="_lbWo-2UhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="LAPTOP-CMEFJE6G" internalId="_lbWo_GUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="talenduser" internalId="_lbWo_WUhEe2mZvXks4efWg"/>
+  </context>
+  <context confirmationNeeded="false" name="produccion">
+    <contextParameter comment="" name="SqlServe1_Schema" prompt="SqlServe1_Schema?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="dbo" internalId="_lbWo_mUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Port" prompt="SqlServe1_Port?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="1433" internalId="_lbWo_2UhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Database" prompt="SqlServe1_Database?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="crmtest" internalId="_lbWpAGUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Password" prompt="SqlServe1_Password?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_Password" value="enc:system.encryption.key.v1:wyn6PvXfKQJthe5TjaLomZpaVoSeuRHYrpQbC19DGiXOWyijQDNztss=" internalId="_lbWpAWUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_AdditionalParams" prompt="SqlServe1_AdditionalParams?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="trustServerCertificate=true;encrypt=false" internalId="_lbWpAmUhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Server" prompt="SqlServe1_Server?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="LAPTOP-CMEFJE6G" internalId="_lbWpA2UhEe2mZvXks4efWg"/>
+    <contextParameter comment="" name="SqlServe1_Login" prompt="SqlServe1_Login?" promptNeeded="false" repositoryContextId="_TQNrAGUdEe2mZvXks4efWg" type="id_String" value="talenduser" internalId="_lbWpBGUhEe2mZvXks4efWg"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -43,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:n5Am67xtlOyFF1vkXQsh26StipFhyICsMLtb6ZVk" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:8bDp5N3lJeUUnqEnhU++ng6a/xD4S5uNK39SJPbn" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -58,7 +84,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/EBS/Studio/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -78,7 +104,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+1Byqw2pb2CFjra0bFOjJf/q3rZoWQKnTonWR4v7" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xZQHz/S0jmh59TzM5lNTbAubuj1TslB3XyS6waPp" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -112,7 +138,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f6tq8GHsEe2kE_e6r6E-3w - _f7ZAYGHsEe2kE_e6r6E-3w - _f7ZncGHsEe2kE_e6r6E-3w" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
-    <elementParameter field="TEXT" name="WSDL_LOCATION" value="C:/Talend/Studio/workspace/CRUDPADRE/services/BuscarVendedor_0.1.wsdl" show="false"/>
+    <elementParameter field="TEXT" name="WSDL_LOCATION" value="D:/EBS/Studio/workspace/CRUDPADRE/services/BuscarVendedor_0.1.wsdl" show="false"/>
     <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/BuscarVendedor" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="BuscarVendedor" show="false"/>
@@ -168,14 +194,14 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ciumcGFzEe2y-pYozlcNrw" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;DESKTOP-2OM718V&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SqlServe1_Server"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;crmtest&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rvhiXGMA9G8wzfD7FsBKBctGK6VctD40xtuaoJy+wbTngA=="/>
+    <elementParameter field="TEXT" name="PORT" value="context.SqlServe1_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SqlServe1_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SqlServe1_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SqlServe1_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FUJ5toX9LiUquZIXaBp26Y3FLP5pcngoHxQEynnMxz1E8WKamuZqvp0XnX27Rzoda4fvwgH9"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ciumcGFzEe2y-pYozlcNrw - vendedor" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;vendedor&quot;"/>
@@ -188,7 +214,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;trustServerCertificate=true;encrypt=false&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SqlServe1_AdditionalParams"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>

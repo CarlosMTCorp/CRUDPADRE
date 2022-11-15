@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_sOTugGFzEe2y-pYozlcNrw" name="SqlServe" id="_ciumcGFzEe2y-pYozlcNrw" label="SqlServe" dataPackage="_srsOEGFzEe2y-pYozlcNrw" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://DESKTOP-2OM718V:1433/crmtest;trustServerCertificate=true;encrypt=false" dbVersionString="JTDS" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:WKePRA6RZ5h8Yixu+X5a9k0PB6LU/pHNyck0Jlaui38=" ServerName="DESKTOP-2OM718V" DatasourceName="" FileFieldName="" SID="crmtest" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="trustServerCertificate=true;encrypt=false" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+  <TalendMetadata:DatabaseConnection xmi:id="_sOTugGFzEe2y-pYozlcNrw" name="SqlServe" id="_ciumcGFzEe2y-pYozlcNrw" label="SqlServe" dataPackage="_srsOEGFzEe2y-pYozlcNrw" ContextMode="true" ContextId="_TQNrAGUdEe2mZvXks4efWg" contextName="Default" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://LAPTOP-CMEFJE6G:1433/crmtest;trustServerCertificate=true;encrypt=false" dbVersionString="JTDS" Port="context.SqlServe1_Port" Username="context.SqlServe1_Login" Password="context.SqlServe1_Password" ServerName="context.SqlServe1_Server" DatasourceName="" FileFieldName="" SID="context.SqlServe1_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.SqlServe1_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.SqlServe1_Schema">
     <taggedValue xmi:id="_sOYnAGFzEe2y-pYozlcNrw" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_sPrngGFzEe2y-pYozlcNrw" tag="package filter" value=""/>
     <taggedValue xmi:id="_sP1YgGFzEe2y-pYozlcNrw" tag="Status" value=""/>
@@ -10,9 +10,9 @@
     <taggedValue xmi:id="_sP1YhGFzEe2y-pYozlcNrw" tag="Author" value=""/>
     <taggedValue xmi:id="_sP1YhWFzEe2y-pYozlcNrw" tag="otherParameter"/>
     <taggedValue xmi:id="_sXijAGFzEe2y-pYozlcNrw" tag="DB ProductName" value="Microsoft SQL Server"/>
-    <taggedValue xmi:id="_sXijAWFzEe2y-pYozlcNrw" tag="DB ProductVersion" value="12.00.2000"/>
+    <taggedValue xmi:id="_sXijAWFzEe2y-pYozlcNrw" tag="DB ProductVersion" value="15.00.2095"/>
     <taggedValue xmi:id="_sXijAmFzEe2y-pYozlcNrw" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_sOYnAWFzEe2y-pYozlcNrw" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+    <parameters xmi:id="_sOYnAWFzEe2y-pYozlcNrw" key="CONN_PARA_KEY_USERNAME" value="context.SqlServe1_Login"/>
     <parameters xmi:id="_LJwgwGF5Ee2tRaV4uiVr7Q" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_srsOEGFzEe2y-pYozlcNrw" name="crmtest" dataManager="_sOTugGFzEe2y-pYozlcNrw">
