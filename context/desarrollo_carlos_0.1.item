@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_m-bQMGRbEe2MZ8_np2K0CQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_m-bQMWRbEe2MZ8_np2K0CQ" comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQMmRbEe2MZ8_np2K0CQ" comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQM2RbEe2MZ8_np2K0CQ" comment="" name="contra" prompt="contra?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfEGReEe2MZ8_np2K0CQ" comment="" name="puerto" prompt="puerto?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfEWReEe2MZ8_np2K0CQ" comment="" name="aditicional" prompt="aditicional?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfEmReEe2MZ8_np2K0CQ" comment="" name="squema" prompt="squema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfE2ReEe2MZ8_np2K0CQ" comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_m-bQNGRbEe2MZ8_np2K0CQ" confirmationNeeded="false" name="desarrollo_carlos">
+    <contextParameter xmi:id="_m-bQNWRbEe2MZ8_np2K0CQ" comment="" name="Host" prompt="Host?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="DESKTOP-2OM718V"/>
+    <contextParameter xmi:id="_m-bQNmRbEe2MZ8_np2K0CQ" comment="" name="user" prompt="user?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="sa"/>
+    <contextParameter xmi:id="_m-bQN2RbEe2MZ8_np2K0CQ" comment="" name="contra" prompt="contra?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="2110"/>
+    <contextParameter xmi:id="_inOfFGReEe2MZ8_np2K0CQ" comment="" name="puerto" prompt="puerto?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfFWReEe2MZ8_np2K0CQ" comment="" name="aditicional" prompt="aditicional?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfFmReEe2MZ8_np2K0CQ" comment="" name="squema" prompt="squema?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfF2ReEe2MZ8_np2K0CQ" comment="" name="database" prompt="database?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_m-bQOGRbEe2MZ8_np2K0CQ" confirmationNeeded="false" name="desarrollo_jose">
+    <contextParameter xmi:id="_m-bQOWRbEe2MZ8_np2K0CQ" comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQOmRbEe2MZ8_np2K0CQ" comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQO2RbEe2MZ8_np2K0CQ" comment="" name="contra" prompt="contra?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfGGReEe2MZ8_np2K0CQ" comment="" name="puerto" prompt="puerto?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfGWReEe2MZ8_np2K0CQ" comment="" name="aditicional" prompt="aditicional?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfGmReEe2MZ8_np2K0CQ" comment="" name="squema" prompt="squema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfG2ReEe2MZ8_np2K0CQ" comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_m-bQPGRbEe2MZ8_np2K0CQ" confirmationNeeded="false" name="produccion">
+    <contextParameter xmi:id="_m-bQPWRbEe2MZ8_np2K0CQ" comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQPmRbEe2MZ8_np2K0CQ" comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m-bQP2RbEe2MZ8_np2K0CQ" comment="" name="contra" prompt="contra?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfHGReEe2MZ8_np2K0CQ" comment="" name="puerto" prompt="puerto?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfHWReEe2MZ8_np2K0CQ" comment="" name="aditicional" prompt="aditicional?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfHmReEe2MZ8_np2K0CQ" comment="" name="squema" prompt="squema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_inOfH2ReEe2MZ8_np2K0CQ" comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+[33mcommit 1bbb190f03675079b5ee44ec9b7a11602fce7fd4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Carlos <camartinez2-es@udabol.edu.bo>
+Date:   Mon Nov 14 16:06:28 2022 -0400
+
+    se agregao el servicio de insertar item pedido venta
+
+[33mcommit f25b5228b0e52fd98d4d7cb911cb11f3d2ae0747[m
+Author: Carlos <camartinez2-es@udabol.edu.bo>
+Date:   Mon Nov 14 15:27:52 2022 -0400
+
+    se creo el servicio de solo insertar direcciones todavia no se puede actualizar las direcciones
+
+[33mcommit 31c14abfb90d7e279e96f21aedab773d9d50e835[m
+Author: Carlos <camartinez2-es@udabol.edu.bo>
+Date:   Mon Nov 14 14:48:45 2022 -0400
+
+     añadimos las carpetas creadas que se creo con los servicios de pedido_venta
+
+[33mcommit 2ffb97f5141a851156a1c49567921e78dd339f51[m
+Author: Carlos <camartinez2-es@udabol.edu.bo>
+Date:   Mon Nov 14 10:21:18 2022 -0400
+
+    second

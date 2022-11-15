@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_lqAwEGRdEe2MZ8_np2K0CQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_lqAwEWRdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Password" prompt="SqlServe_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:jurN5WyficJRKOCF8LV25CUjQ2W1HagUuFYyhoMMqxE="/>
+  <contextParameter xmi:id="_lqAwEmRdEe2MZ8_np2K0CQ" comment="" name="SqlServe_AdditionalParams" prompt="SqlServe_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="trustServerCertificate=true;encrypt=false"/>
+  <contextParameter xmi:id="_lqAwE2RdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Database" prompt="SqlServe_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="crmtest"/>
+  <contextParameter xmi:id="_lqAwFGRdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Server" prompt="SqlServe_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="DESKTOP-2OM718V"/>
+  <contextParameter xmi:id="_lqAwFWRdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Schema" prompt="SqlServe_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo"/>
+  <contextParameter xmi:id="_lqAwFmRdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Port" prompt="SqlServe_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_lqAwF2RdEe2MZ8_np2K0CQ" comment="" name="SqlServe_Login" prompt="SqlServe_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="sa"/>
+</talendfile:ContextType>
