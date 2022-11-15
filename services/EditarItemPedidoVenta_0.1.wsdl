@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="EditarItemPedidoVenta"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="EditarItemPedidoVentaOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id" type="xsd:int"></xsd:element>
+						<xsd:element name="id_pedido"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="cantidad"
+							type="xsd:float">
+						</xsd:element>
+						<xsd:element name="valor_unitario"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="id_material"
+							type="xsd:int">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="EditarItemPedidoVentaOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="EditarItemPedidoVentaOperationRequest">
+		<wsdl:part name="parameters" element="tns:EditarItemPedidoVentaOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="EditarItemPedidoVentaOperationResponse">
+		<wsdl:part name="parameters" element="tns:EditarItemPedidoVentaOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="EditarItemPedidoVentaPortType">
+		<wsdl:operation name="EditarItemPedidoVentaOperation">
+			<wsdl:input message="tns:EditarItemPedidoVentaOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:EditarItemPedidoVentaOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="EditarItemPedidoVentaBinding" type="tns:EditarItemPedidoVentaPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="EditarItemPedidoVentaOperation">
+			<soap:operation soapAction="http://www.talend.org/service/EditarItemPedidoVentaOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="EditarItemPedidoVenta">
+		<wsdl:port name="EditarItemPedidoVentaPort" binding="tns:EditarItemPedidoVentaBinding">
+			<soap:address location="http://localhost:8090/services/EditarItemPedidoVenta" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
