@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="VendedorServices"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="VendedorServicesOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="VendedorServicesOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="VendedorServicesOperationRequest">
+		<wsdl:part name="parameters" element="tns:VendedorServicesOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="VendedorServicesOperationResponse">
+		<wsdl:part name="parameters" element="tns:VendedorServicesOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="VendedorServicesPortType">
+		<wsdl:operation name="VendedorServicesOperation">
+			<wsdl:input message="tns:VendedorServicesOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:VendedorServicesOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="VendedorServicesBinding" type="tns:VendedorServicesPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="VendedorServicesOperation">
+			<soap:operation soapAction="http://www.talend.org/service/VendedorServicesOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="VendedorServices">
+		<wsdl:port name="VendedorServicesPort" binding="tns:VendedorServicesBinding">
+			<soap:address location="http://localhost:8090/services/VendedorServices" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

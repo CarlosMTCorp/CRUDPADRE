@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ClienteService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="ClienteServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ClienteServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="ClienteServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:ClienteServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ClienteServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:ClienteServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="ClienteServicePortType">
+		<wsdl:operation name="ClienteServiceOperation">
+			<wsdl:input message="tns:ClienteServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:ClienteServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="ClienteServiceBinding" type="tns:ClienteServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ClienteServiceOperation">
+			<soap:operation soapAction="http://www.talend.org/service/ClienteServiceOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="ClienteService">
+		<wsdl:port name="ClienteServicePort" binding="tns:ClienteServiceBinding">
+			<soap:address location="http://localhost:8090/services/ClienteService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
