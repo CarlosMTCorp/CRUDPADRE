@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_sOTugGFzEe2y-pYozlcNrw" name="SqlServe" id="_ciumcGFzEe2y-pYozlcNrw" label="SqlServe" dataPackage="_srsOEGFzEe2y-pYozlcNrw" ContextMode="true" ContextId="_TQNrAGUdEe2mZvXks4efWg" contextName="Default" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://LAPTOP-CMEFJE6G:1433/crmtest;trustServerCertificate=true;encrypt=false" dbVersionString="JTDS" Port="context.SqlServe1_Port" Username="context.SqlServe1_Login" Password="context.SqlServe1_Password" ServerName="context.SqlServe1_Server" DatasourceName="" FileFieldName="" SID="context.SqlServe1_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.SqlServe1_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.SqlServe1_Schema">
+  <TalendMetadata:DatabaseConnection xmi:id="_sOTugGFzEe2y-pYozlcNrw" name="SqlServe" id="_ciumcGFzEe2y-pYozlcNrw" label="SqlServe" dataPackage="_srsOEGFzEe2y-pYozlcNrw" ContextMode="true" ContextId="_TQNrAGUdEe2mZvXks4efWg" contextName="produccion" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://LAPTOP-CMEFJE6G:1433/crmtest;trustServerCertificate=true;encrypt=false" dbVersionString="JTDS" Port="context.SqlServe1_Port" Username="context.SqlServe1_Login" Password="context.SqlServe1_Password" ServerName="context.SqlServe1_Server" DatasourceName="" FileFieldName="" SID="context.SqlServe1_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="context.SqlServe1_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.SqlServe1_Schema">
     <taggedValue xmi:id="_sOYnAGFzEe2y-pYozlcNrw" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_sPrngGFzEe2y-pYozlcNrw" tag="package filter" value=""/>
     <taggedValue xmi:id="_sP1YgGFzEe2y-pYozlcNrw" tag="Status" value=""/>
@@ -172,6 +172,50 @@
           <taggedValue xmi:id="_FwGIUWRJEe2MZ8_np2K0CQ" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_FwGIUmRJEe2MZ8_np2K0CQ" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_FwGIU2RJEe2MZ8_np2K0CQ" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="__rZhUGX9Ee2hH5RGn2dTcw" name="material" id="__rWeAGX9Ee2hH5RGn2dTcw" label="material" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="__rZhUWX9Ee2hH5RGn2dTcw" name="id_material" label="id_material" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="__rZhUmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__rZhU2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__rZhVGX9Ee2hH5RGn2dTcw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__rZhVWX9Ee2hH5RGn2dTcw" name="nombre_material" label="nombre_material" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="__rZhVmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__rZhV2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__rZhWGX9Ee2hH5RGn2dTcw" name="VARCHAR" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__rZhWWX9Ee2hH5RGn2dTcw" name="precio_unitario" label="precio_unitario" length="19" precision="4" sourceType="MONEY" talendType="id_Object" nullable="false">
+          <taggedValue xmi:id="__rZhWmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__rZhW2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__rZhXGX9Ee2hH5RGn2dTcw" name="MONEY" numericPrecision="4" numericPrecisionRadix="10" javaDataType="3"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__rZhXWX9Ee2hH5RGn2dTcw" name="id_clase" label="id_clase" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="__rZhXmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__rZhX2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__rZhYGX9Ee2hH5RGn2dTcw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__rZhYWX9Ee2hH5RGn2dTcw" name="situacion" label="situacion" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="__rZhYmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__rZhY2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__rZhZGX9Ee2hH5RGn2dTcw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="__2JYwGX9Ee2hH5RGn2dTcw" name="stock_actual" id="__2IxsGX9Ee2hH5RGn2dTcw" label="stock_actual" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="__2JYwWX9Ee2hH5RGn2dTcw" name="id_stock" label="id_stock" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="__2JYwmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__2JYw2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__2JYxGX9Ee2hH5RGn2dTcw" name="INT IDENTITY" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__2JYxWX9Ee2hH5RGn2dTcw" name="id_material" label="id_material" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="__2JYxmX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__2JYx2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__2JYyGX9Ee2hH5RGn2dTcw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="__2JYyWX9Ee2hH5RGn2dTcw" name="stock" label="stock" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="__2JYymX9Ee2hH5RGn2dTcw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="__2JYy2X9Ee2hH5RGn2dTcw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="__2JYzGX9Ee2hH5RGn2dTcw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
         </feature>
       </ownedElement>
     </ownedElement>
