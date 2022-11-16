@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
-  <Services:ServiceConnection xmi:id="_sAwL8GF5Ee2tRaV4uiVr7Q" id="_sAvk4GF5Ee2tRaV4uiVr7Q" servicePort="_9KE9QGW_Ee2IZoaFXOEG5Q"/>
-  <Services:ServicePort xmi:id="_9KE9QGW_Ee2IZoaFXOEG5Q" name="InsertVendedorServicePortType" id="_sDVl4GF5Ee2tRaV4uiVr7Q" serviceOperation="_9KE9QWW_Ee2IZoaFXOEG5Q"/>
-  <Services:ServiceOperation xmi:id="_9KE9QWW_Ee2IZoaFXOEG5Q" label="InsertVendedorServiceOperation-InsertVendedorServicePortType_InsertVendedorServiceOperation" name="InsertVendedorServiceOperation" id="_sDVl4WF5Ee2tRaV4uiVr7Q" referenceJobId="_EzwLgGF6Ee2tRaV4uiVr7Q"/>
+  <Services:ServiceConnection xmi:id="_sAwL8GF5Ee2tRaV4uiVr7Q" id="_sAvk4GF5Ee2tRaV4uiVr7Q" servicePort="_UnskoGXIEe2qJbQczYVgXA"/>
+  <Services:ServicePort xmi:id="_UnskoGXIEe2qJbQczYVgXA" name="InsertVendedorServicePortType" id="_sDVl4GF5Ee2tRaV4uiVr7Q" serviceOperation="_UnskoWXIEe2qJbQczYVgXA"/>
+  <Services:ServiceOperation xmi:id="_UnskoWXIEe2qJbQczYVgXA" label="InsertVendedorServiceOperation-InsertVendedorServicePortType_InsertVendedorServiceOperation" name="InsertVendedorServiceOperation" id="_sDVl4WF5Ee2tRaV4uiVr7Q" referenceJobId="_EzwLgGF6Ee2tRaV4uiVr7Q"/>
 </xmi:XMI>
