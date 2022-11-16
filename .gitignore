@@ -6,5 +6,5 @@ temp/
 sqlPatterns/
 .settings
 poms/
-#talend.project
+talend.project
 .project

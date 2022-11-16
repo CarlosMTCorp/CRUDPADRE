@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedItems id="_lpnHcGRdEe2MZ8_np2K0CQ" path="" type="CONTEXT"/>
+  <deletedItems id="_m92ocGRbEe2MZ8_np2K0CQ" path="" type="CONTEXT"/>
   <deletedItems id="_jIx38GF0Ee2y-pYozlcNrw" path="InsertarVendedor/InsertarVendedorPortType/InsertarVendedorOperation" type="PROCESS"/>
   <deletedItems id="_E6DPgGF0Ee2y-pYozlcNrw" path="" type="SERVICES"/>
 </recyclebin:RecycleBin>
