@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="InsertarMaterial"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="InsertarMaterialOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="id_material" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InsertarMaterialOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="InsertarMaterialOperationRequest">
+		<wsdl:part name="parameters" element="tns:InsertarMaterialOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InsertarMaterialOperationResponse">
+		<wsdl:part name="parameters" element="tns:InsertarMaterialOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="InsertarMaterialPortType">
+		<wsdl:operation name="InsertarMaterialOperation">
+			<wsdl:input message="tns:InsertarMaterialOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:InsertarMaterialOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="InsertarMaterialBinding" type="tns:InsertarMaterialPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="InsertarMaterialOperation">
+			<soap:operation soapAction="http://www.talend.org/service/InsertarMaterialOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="InsertarMaterial">
+		<wsdl:port name="InsertarMaterialPort" binding="tns:InsertarMaterialBinding">
+			<soap:address location="http://localhost:8090/services/InsertarMaterial" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

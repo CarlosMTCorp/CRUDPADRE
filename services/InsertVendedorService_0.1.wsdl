@@ -73,7 +73,7 @@
 
 	<wsdl:service name="InsertVendedorService">
 		<wsdl:port name="InsertVendedorServicePort" binding="tns:InsertVendedorServiceBinding">
-			<soap:address location="http://localhost:8090/services/InsertVendedorService" />
+			<soap:address location="http://192.168.1.5:8090/services/InsertVendedorService" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

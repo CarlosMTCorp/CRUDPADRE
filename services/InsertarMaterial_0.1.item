@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_RSf4gGXKEe2cd9cDjxUL2g" servicePort="_RWC7wGXKEe2cd9cDjxUL2g"/>
+  <Services:ServicePort xmi:id="_RWC7wGXKEe2cd9cDjxUL2g" name="InsertarMaterialPortType" id="_RWCUsGXKEe2cd9cDjxUL2g" serviceOperation="_RWC7wWXKEe2cd9cDjxUL2g"/>
+  <Services:ServiceOperation xmi:id="_RWC7wWXKEe2cd9cDjxUL2g" label="InsertarMaterialOperation-InsertarMaterialPortType_InsertarMaterialOperation" name="InsertarMaterialOperation" id="_RWCUsWXKEe2cd9cDjxUL2g" referenceJobId="_2nsX4GXLEe2cd9cDjxUL2g"/>
+</xmi:XMI>
