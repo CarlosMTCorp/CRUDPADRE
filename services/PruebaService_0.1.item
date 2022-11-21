@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="_q4InEGnJEe2XBfBW5uQR2Q" servicePort="_o73f8GnPEe2XBfBW5uQR2Q _o73f8mnPEe2XBfBW5uQR2Q _o73f9GnPEe2XBfBW5uQR2Q _o73f9mnPEe2XBfBW5uQR2Q"/>
+  <Services:ServicePort xmi:id="_o73f8GnPEe2XBfBW5uQR2Q" name="PruebaDeletePortType" id="_QzSy4GnOEe2XBfBW5uQR2Q" serviceOperation="_o73f8WnPEe2XBfBW5uQR2Q"/>
+  <Services:ServiceOperation xmi:id="_o73f8WnPEe2XBfBW5uQR2Q" label="PruebaDeleteOperation" name="PruebaDeleteOperation" id="_C9OlgGnPEe2XBfBW5uQR2Q"/>
+  <Services:ServicePort xmi:id="_o73f8mnPEe2XBfBW5uQR2Q" name="PruebaCreatePortType" id="_GlpTIGnOEe2XBfBW5uQR2Q" serviceOperation="_o73f82nPEe2XBfBW5uQR2Q"/>
+  <Services:ServiceOperation xmi:id="_o73f82nPEe2XBfBW5uQR2Q" label="PruebaCreateOperation" name="PruebaCreateOperation" id="_C9OlgWnPEe2XBfBW5uQR2Q"/>
+  <Services:ServicePort xmi:id="_o73f9GnPEe2XBfBW5uQR2Q" name="PruebaUpdatePorType" id="_Glp6MGnOEe2XBfBW5uQR2Q" serviceOperation="_o73f9WnPEe2XBfBW5uQR2Q"/>
+  <Services:ServiceOperation xmi:id="_o73f9WnPEe2XBfBW5uQR2Q" label="PruebaUpdateOperation" name="PruebaUpdateOperation" id="_C9OlgmnPEe2XBfBW5uQR2Q"/>
+  <Services:ServicePort xmi:id="_o73f9mnPEe2XBfBW5uQR2Q" name="PruebaGetPortType" id="_Glp6MmnOEe2XBfBW5uQR2Q" serviceOperation="_o73f92nPEe2XBfBW5uQR2Q _o73f-GnPEe2XBfBW5uQR2Q"/>
+  <Services:ServiceOperation xmi:id="_o73f92nPEe2XBfBW5uQR2Q" label="PruebaGetOperation" name="PruebaGetOperation" id="_C9Olg2nPEe2XBfBW5uQR2Q"/>
+  <Services:ServiceOperation xmi:id="_o73f-GnPEe2XBfBW5uQR2Q" label="PruebaSearchOperation" name="PruebaSearchOperation" id="_C9OlhGnPEe2XBfBW5uQR2Q"/>
+</xmi:XMI>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="PruebaService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="PruebaDeleteOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaDeleteOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaCreateOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaCreateOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaUpdateOperationResponse1">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaGetOperationResponse2">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaSearchOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="PruebaSearchOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="PruebaDeleteOperationRequest">
+		<wsdl:part name="parameters" element="tns:PruebaDeleteOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaDeleteOperationResponse">
+		<wsdl:part name="parameters" element="tns:PruebaDeleteOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:message name="UpdateOperationRequest">
+		<wsdl:part name="parameters" element="tns:UpdateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="UpdateOperationResponse">
+		<wsdl:part name="parameters" element="tns:UpdateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaCreateOperationRequest">
+		<wsdl:part name="parameters" element="tns:PruebaCreateOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaCreateOperationResponse">
+		<wsdl:part name="parameters" element="tns:PruebaCreateOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaUpdateOperationResponse1">
+		<wsdl:part name="parameters" element="tns:PruebaUpdateOperationResponse1"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaGetOperationResponse2">
+		<wsdl:part name="parameters" element="tns:PruebaGetOperationResponse2"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaSearchOperationRequest">
+		<wsdl:part name="parameters" element="tns:PruebaSearchOperation"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="PruebaSearchOperationResponse">
+		<wsdl:part name="parameters" element="tns:PruebaSearchOperationResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="PruebaDeletePortType">
+		<wsdl:operation name="PruebaDeleteOperation">
+			<wsdl:input message="tns:PruebaDeleteOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:PruebaDeleteOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:portType name="PruebaCreatePortType">
+		<wsdl:operation name="PruebaCreateOperation">
+			<wsdl:input message="tns:PruebaCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:PruebaCreateOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="PruebaUpdatePorType">
+		<wsdl:operation name="PruebaUpdateOperation">
+			<wsdl:input message="tns:PruebaCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:PruebaUpdateOperationResponse1"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="PruebaGetPortType">
+		<wsdl:operation name="PruebaGetOperation">
+			<wsdl:input message="tns:PruebaCreateOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:PruebaGetOperationResponse2"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="PruebaSearchOperation">
+			<wsdl:input message="tns:PruebaSearchOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:PruebaSearchOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="UpdateSOAPBinding"
+		type="tns:PruebaUpdatePorType">
+
+
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="PruebaUpdateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/PruebaUpdateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:binding name="CreateSOAPBinding"
+		type="tns:PruebaCreatePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="PruebaCreateOperation">
+			<soap:operation
+				soapAction="http://www.talend.org/service/PruebaCreateOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="GetHTTPBinding" type="tns:PruebaGetPortType">
+
+		<http:binding verb="GET" />
+		<wsdl:operation name="PruebaGetOperation">
+
+			<http:operation location="/PruebaGetOperation" />
+			<wsdl:input>
+
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="PruebaSearchOperation">
+			<http:operation location="/PruebaSearchOperation" />
+			<wsdl:input>
+				<http:urlEncoded />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="DeleteHTTPBinding"
+		type="tns:PruebaDeletePortType">
+		<http:binding verb="POST" />
+		<wsdl:operation name="PruebaDeleteOperation">
+			<http:operation location="/PruebaServiceOperation" />
+			<wsdl:input>
+				<mime:content type="application/x-www-form-urlencoded" />
+			</wsdl:input>
+			<wsdl:output>
+				<mime:content type="text/xml" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="PruebaService">
+		<wsdl:port name="PruebaServiceCreatePort" binding="tns:CreateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/PruebaService/Create" />
+		</wsdl:port>
+		<wsdl:port name="PruebaServiceUpdatePort" binding="tns:UpdateSOAPBinding">
+			<soap:address location="http://localhost:8090/services/PruebaService/Update" /></wsdl:port>
+		<wsdl:port name="PruebaServiceGetPort" binding="tns:GetHTTPBinding"><http:address location="http://localhost:8090/services/PruebaService/Get"/></wsdl:port>
+		<wsdl:port name="PruebaServiceDeletePort" binding="tns:DeleteHTTPBinding"><http:address location="http://localhost:8090/services/PruebaService/Delete"/></wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

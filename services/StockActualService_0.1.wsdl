@@ -55,7 +55,7 @@
 
 	<wsdl:service name="StockActualService">
 		<wsdl:port name="StockActualServicePort" binding="tns:StockActualServiceBinding">
-			<soap:address location="http://localhost:8090/services/StockActualService" />
+			<soap:address location="http://localhost:8090/services/Stock/Crear-Stock" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
